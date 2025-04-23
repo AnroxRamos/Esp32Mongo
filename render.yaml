@@ -11,3 +11,4 @@ services:
   buildCommand: pip install -r requirements.txt
   startCommand: python app.py
 version: "1"
+
