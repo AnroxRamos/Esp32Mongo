@@ -2,14 +2,12 @@ services:
   - type: web
     name: pryMongoEsp32
     runtime: python
-    repo: https://github.com/AnroxRamos/Esp32Mongo.git
+    repo: https://github.com/AnroxRamos/Esp32Mongo
     plan: free
     envVars:
       - key: MONGO_URI
-        sync: false  # Se configurará manualmente en el dashboard de Render
+        value: mongodb+srv://Test:12345@cluster0.7zhck.mongodb.net/BasePryEsp32?retryWrites=true&w=majority
     region: oregon
-    buildCommand: |
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: python app.py
 version: "1"
