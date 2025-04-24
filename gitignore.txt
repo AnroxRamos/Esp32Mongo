@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Environment files
+# Environment
 .env
 .venv/
 venv/
@@ -12,30 +12,15 @@ env/
 env.bak/
 venv.bak/
 
-# Sensitive data
-secrets.py
-config.py
-
-# OS specific
+# Mac OS
 .DS_Store
 
-# IDE
+# VS Code
 .vscode/
-.idea/
 
-# Testing
+# Pytest
 .pytest_cache/
 
-# Logs
-*.log
-logs/
-
-# Render local settings
-render-local.json
-
-# Database files
-*.db
-*.sqlite
 # Log files
 *.log
 
