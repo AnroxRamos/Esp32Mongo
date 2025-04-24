@@ -1,13 +1,13 @@
 services:
-- type: web
-  name: pryMongoEsp32
-  runtime: python
-  repo: https://github.com/AnroxRamos/Esp32Mongo.git
-  plan: free
-  envVars:
-  - key: MONGO_URI
-    value: mongodb+srv://joseangelpintoramos:12345@cluster0.zxpvrxn.mongodb.net/?retryWrites=true&w=majority
-  region: oregon
-  buildCommand: pip install -r requirements.txt
-  startCommand: python app.py
+  - type: web
+    name: pryMongoEsp32
+    runtime: python
+    repo: https://github.com/AnroxRamos/Esp32Mongo.git
+    plan: free
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://joseangelpintoramos:12345@cluster0.zxpvrxn.mongodb.net/?retryWrites=true&w=majority
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
 version: "1"
